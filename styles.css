@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Now in order to change the unordered list to horizontal etc , we select ul inside the nav tag , like this: */
+
+nav ul{
+    display: flex;   
+    /* makes the list items become horizontal */
+    list-style-type:none;   
+    /* In CSS, the list-style-type property specifies the type of marker or bullet point that will be used for list items in an ordered or unordered list. This property can be applied to <ul>, <ol>, and <li> elements to define how the list markers should appear. */
+    height: 70px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+nav ul img{
+    width: 65px;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+/* 
+    the list item containing logo and 'apple music' text both , you can say that both logo and text were locked inside
+    a box , so we can use display prop, and we changed it to flex so that items aligned in row format (default)
+    And we did align items center so that image and text come to center.  */
+
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+nav ul li {
+    padding: 0 10px;
+
+    /* nav ke andar ke ul ke andar ke saare li ke liye same prop
+    padding : 0 (TOP AND BOTTOM) 10px left right */
+}
+
+#clone_bg{
+    position: fixed;
+    right: 0;
+    top: 25%;
+    
+}
+
+.bottom{
+    height: 80px;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    flex-direction: column;
+    background-color: black;
+}
+
+.container{
+    min-height: 100vh;
+    /* we did this , because we want the bottom div(music playing bar) to be at the bottom , and agar uske upar ki container ka min height
+    will cover 80% of viewport height , the bottom bar will automatically be pushed down at the bottom */
+    background-color: black;
+color: white;
+}
+
+#myprogressBar{
+    width: 60vw;
+    cursor: pointer;
+    
+}
+
+.icons{
+    margin-top: 10px;
+    
+}
+
+.icons i{
+    padding: 0 5px;
+    cursor: pointer;
+    color: white;
+
+    /* padding 0 5px , because for every icon ( play , forward and backward) , we wanted thoda space between them , and top pe nothing
+    (that is given by margin-top:10px above).  */
+}
+
+/* The below is used to style the input slider (just know how to do this) */
+input[type="range"]::-webkit-slider-runnable-track{
+    background: gray;
+    border-radius: 10px;
+    height: 17px;
+}
+
+.container h1{
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 50%;
+    color: black;
+    align-items: center;   
+    /* when i put align-items: center , before i had done height of songItem img below to 50px , the image was becoming
+    huge and coming out of div. This was because , as flexbox aligns items , it doesnt particularly restrict the size of 
+    the image , and the actual size of the image takes over. Hence , we need to set the height of the image to prevent this
+     */
+    margin: 20px 35px;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+
+.songItem img{
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    border-radius: 20px;
+}
+
+.songItem i{
+    padding: 0 10px;
+}
+
+.songlistplay i{
+    cursor: pointer;
+}
+
+.songItemContainer{
+   margin-top: 70px;
+}
+
+.songInfo{
+    color: azure;
+    position: absolute;
+    left: 20vw;
+    
+}

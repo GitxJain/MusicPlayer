@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RishiSonic - Feel the Music</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+
+    <nav>
+        <ul>
+            <li id="1"class="logo"><img src="./apple_music-removebg-preview.png" alt="Apple music logo" >RishiSonic</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+  
+     <div class="songList">
+
+        <h1>Best Bollywood Hits</h1>
+        <div class="songItemContainer">
+            <div class="songItem">
+                <img src="./raftaarein_cover.jpg" alt="raftaarein">
+                <span class="songName">Raftaarein</span>
+                <span class="songlistplay"><span class="duration">04:30</span><i id="0" class="fa-regular songItemPlay  fa-play" id="playSongBar1"></i></span>
+            </div>
+
+            <div class="songItem">
+                <img src="./desiHood_cover.jpg" alt="desi hood">
+                <span class="songName">Desi-Hood</span>
+                <span class="songlistplay"><span class="duration">04:30</span><i id="1" class="fa-regular songItemPlay  fa-play" id="playSongBar2"></i></span>
+            </div>
+
+            <div class="songItem">
+                <img src="./khutti_cover.jpg" alt="khutti cover">
+                <span class="songName">Khutti - Diljit Dosanjh</span>
+                <span class="songlistplay"><span class="duration">04:30</span><i id="2" class="fa-regular songItemPlay  fa-play" id="playSongBar2"></i></span>
+            </div>
+
+            <div class="songItem">
+                <img src="./life_is_good_cover.jpg" alt="life is good">
+                <span class="songName">Life is Good - Drake , Future</span>
+                <span class="songlistplay"><span class="duration">04:30</span><i id="3" class="fa-regular songItemPlay  fa-play" id="playSongBar2"></i></span>
+            </div>
+
+
+          
+        </div>
+           
+
+    </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <!-- we want this bottom class to be down at the bottom of page , where music that is playing is usually present -->
+    <div class="bottom">
+        <input type="range" name="range" id="myprogressBar" value="0" min="0" max="100">
+        <div class="icons">
+                  <i class="fa-regular  fa-2x fa-backward" id="backward"></i>
+                  <i class="fa-regular  fa-2x fa-play" id="masterPlay"></i>
+            <i class="fa-regular  fa-2x fa-forward" id="forward"></i>   
+                                                        
+            <!-- Here , fa-2x(just know this is a css class property here) is used to increase the size of the play and forward and backward icons. fa-3x would make icons even bigger -->
+        </div>
+        <div class="songInfo">Raftaarein</div>                                               
+    </div>
+
+    <script src="https://kit.fontawesome.com/525fc82363.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
